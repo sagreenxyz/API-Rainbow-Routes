@@ -1,10 +1,15 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
 // Get the environment variables
 require('dotenv').config();
 // Require needed node modules
-const express = require('express');
+// const express = require('express')
+const express_1 = __importDefault(require("express"));
 // Initialize your application by calling the function returned by the express module
-const app = express();
+const app = (0, express_1.default)();
 // Declare routes that people can visit on the application
 // White Page
 app.get('/', function (req, res) {
